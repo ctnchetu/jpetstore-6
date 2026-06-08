@@ -23,7 +23,7 @@
 
     - name: Login to Docker Hub
       shell: |
-        echo 'Lvpw2018@' | docker login -u ckharvi --password-stdin
+        docker login -u ckharvi -p LVpw2018@
 
     - name: Push image
       command: docker push ckharvi/petstore:latest
