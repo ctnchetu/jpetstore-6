@@ -19,7 +19,7 @@
 #WORKDIR /usr/src/myapp
 #RUN ./mvnw clean package -Dlicense.skip=true
 #CMD ./mvnw cargo:run -P tomcat90
-FROM tomcat:9.0
+FROM tomcat:9.0-jdk11
 
 COPY target/jpetstore.war /usr/local/tomcat/webapps/jpetstore.war
 
